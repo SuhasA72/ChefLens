@@ -9,11 +9,13 @@ ChefLens is a **Smart Recipe Generator** that processes cooking videos and extra
 - 📝 **User Feedback**: Allows users to submit feedback on generated recipes, which is stored in a database.
 - 📊 **Database Management**: Manages recipes, feedback, and leaderboard data using **SQLite**.
 - 📜 **Logging**: Tracks application events and errors for debugging and monitoring.
+- ⚡ **GPU Acceleration**: Supports running on **GPU (CUDA-enabled)** for faster processing.
+- 🐧 **Linux Compatibility**: Preferably runs on **Linux** for optimal performance.
 
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
-Ensure you have **Python 3.8+** installed on your system.
+Ensure you have **Python 3.8+**, **CUDA-enabled GPU**, and necessary drivers installed on your system.
 
 ### Steps
 1. **Clone the Repository**:
@@ -21,17 +23,18 @@ Ensure you have **Python 3.8+** installed on your system.
    git clone https://github.com/SuhasA72/ChefLens.git
    cd ChefLens
    ```
-2. **Create a Virtual Environment (Optional but Recommended)**:
+2. **Create a Conda Environment**:
    ```bash
-   python -m venv venv
-   source venv/bin/activate   # On macOS/Linux
-   venv\Scripts\activate      # On Windows
+   conda create --name cheflens python=3.8
+   conda activate cheflens
    ```
 3. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
-4. **Set Up API Key**: Configure the **Gemini API key** in `app.py`.
+4. **Set Up API Key**:
+   - Obtain your **Gemini API Key** from [Google AI Studio](https://aistudio.google.com/app/apikey).
+   - Configure the API key inside `app.py`.
 5. **Run the Application**:
    ```bash
    streamlit run app.py
@@ -51,6 +54,7 @@ Ensure you have **Python 3.8+** installed on your system.
 - **Pandas**: Data manipulation and storage
 - **SQLite**: Database management
 - **Logging**: Python's built-in logging module
+- **GPU Support**: **CUDA-enabled processing** for enhanced speed
 
 ## 🔗 API References
 - **Gemini API**: Used for generating recipes from transcribed text.
@@ -75,4 +79,3 @@ This project is licensed under the **MIT License**.
 ---
 ### 🎯 Developed by [SuhasA72](https://github.com/SuhasA72)
 📩 Feel free to contribute, report issues, or suggest improvements!
-
