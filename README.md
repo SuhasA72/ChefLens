@@ -66,6 +66,13 @@ Ensure you have **Python 3.8+**, **CUDA-enabled GPU**, and necessary drivers ins
 4. **Data Management**: Recipes and feedback are stored in a **SQLite database**.
 5. **Logging & Monitoring**: Keeps track of errors and events for debugging.
 
+## 📌 To-Do List (Future Work)
+- [ ] Enable **MongoDB** database for querying and better scalability.
+- [ ] Integrate **ResNet and other models** for identifying objects in cooking videos.
+- [ ] Improve **natural language processing** for better transcription accuracy.
+- [ ] Enhance **user interface** with more interactive elements.
+- [ ] Implement **multi-language support** for wider accessibility.
+
 ## 🤝 Contributing
 1. **Fork the Repository**
 2. **Create a Branch**: `git checkout -b feature-branch`
@@ -79,3 +86,4 @@ This project is licensed under the **MIT License**.
 ---
 ### 🎯 Developed by [SuhasA72](https://github.com/SuhasA72)
 📩 Feel free to contribute, report issues, or suggest improvements!
+
