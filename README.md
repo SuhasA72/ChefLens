@@ -71,7 +71,6 @@ Ensure you have **Python 3.8+**, **CUDA-enabled GPU**, and necessary drivers ins
 - [ ] Integrate **ResNet and other models** for identifying objects in cooking videos.
 - [ ] Improve **natural language processing** for better transcription accuracy.
 - [ ] Enhance **user interface** with more interactive elements.
-- [ ] Implement **multi-language support** for wider accessibility.
 
 ## 🤝 Contributing
 1. **Fork the Repository**
